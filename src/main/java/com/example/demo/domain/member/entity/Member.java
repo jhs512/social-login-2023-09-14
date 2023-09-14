@@ -26,6 +26,7 @@ public class Member {
     private String username;
     private String password;
     private String nickname;
+    private String profileImgUrl;
 
     public List<? extends GrantedAuthority> getGrantedAuthorities() {
         List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
