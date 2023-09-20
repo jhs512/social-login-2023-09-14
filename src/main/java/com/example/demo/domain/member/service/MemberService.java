@@ -39,7 +39,7 @@ public class MemberService {
         return join(username, "", nickname, profileImgUrl); // 최초 로그인 시 딱 한번 실행
     }
 
-    private Optional<Member> findByUsername(String username) {
+    public Optional<Member> findByUsername(String username) {
         return memberRepository.findByUsername(username);
     }
 }
